@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C63552521D37FE7500EF5048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552511D37FE7500EF5048 /* AppDelegate.swift */; };
+		C63552541D37FE7500EF5048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552531D37FE7500EF5048 /* ViewController.swift */; };
+		C63552571D37FE7500EF5048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63552551D37FE7500EF5048 /* Main.storyboard */; };
+		C63552591D37FE7500EF5048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63552581D37FE7500EF5048 /* Assets.xcassets */; };
+		C635525C1D37FE7500EF5048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C635525A1D37FE7500EF5048 /* LaunchScreen.storyboard */; };
+		C63552671D37FE7500EF5048 /* CoolNotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552661D37FE7500EF5048 /* CoolNotesAppTests.swift */; };
+		C63552721D37FE7500EF5048 /* CoolNotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552711D37FE7500EF5048 /* CoolNotesAppUITests.swift */; };
+		C63552811D37FEA500EF5048 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C635527F1D37FEA500EF5048 /* Model.xcdatamodeld */; };
+		C63552831D38054300EF5048 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552821D38054300EF5048 /* CoreDataStack.swift */; };
+		C63552881D3805CF00EF5048 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552841D3805CF00EF5048 /* Note+CoreDataProperties.swift */; };
+		C63552891D3805CF00EF5048 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552851D3805CF00EF5048 /* Note.swift */; };
+		C635528A1D3805CF00EF5048 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552861D3805CF00EF5048 /* Notebook+CoreDataProperties.swift */; };
+		C635528B1D3805CF00EF5048 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63552871D3805CF00EF5048 /* Notebook.swift */; };
+		C635528E1D3808CC00EF5048 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635528D1D3808CC00EF5048 /* CoreDataTableViewController.swift */; };
+		C63552901D380BF600EF5048 /* NotebooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635528F1D380BF600EF5048 /* NotebooksTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63552631D37FE7500EF5048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63552461D37FE7500EF5048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C635524D1D37FE7500EF5048;
+			remoteInfo = CoolNotesApp;
+		};
+		C635526E1D37FE7500EF5048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63552461D37FE7500EF5048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C635524D1D37FE7500EF5048;
+			remoteInfo = CoolNotesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C635524E1D37FE7500EF5048 /* CoolNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63552511D37FE7500EF5048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C63552531D37FE7500EF5048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C63552561D37FE7500EF5048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C63552581D37FE7500EF5048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C635525B1D37FE7500EF5048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C635525D1D37FE7500EF5048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63552621D37FE7500EF5048 /* CoolNotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolNotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63552661D37FE7500EF5048 /* CoolNotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolNotesAppTests.swift; sourceTree = "<group>"; };
+		C63552681D37FE7500EF5048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C635526D1D37FE7500EF5048 /* CoolNotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolNotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63552711D37FE7500EF5048 /* CoolNotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolNotesAppUITests.swift; sourceTree = "<group>"; };
+		C63552731D37FE7500EF5048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63552801D37FEA500EF5048 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C63552821D38054300EF5048 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = CoolNotesApp/CoreDataStack.swift; sourceTree = "<group>"; };
+		C63552841D3805CF00EF5048 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C63552851D3805CF00EF5048 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C63552861D3805CF00EF5048 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C63552871D3805CF00EF5048 /* Notebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notebook.swift; sourceTree = "<group>"; };
+		C635528D1D3808CC00EF5048 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataTableViewController.swift; path = ../CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		C635528F1D380BF600EF5048 /* NotebooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotebooksTableViewController.swift; path = ../NotebooksTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C635524B1D37FE7500EF5048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C635525F1D37FE7500EF5048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C635526A1D37FE7500EF5048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C63552451D37FE7500EF5048 = {
+			isa = PBXGroup;
+			children = (
+				C635528C1D3805E000EF5048 /* Model */,
+				C63552501D37FE7500EF5048 /* CoolNotesApp */,
+				C63552651D37FE7500EF5048 /* CoolNotesAppTests */,
+				C63552701D37FE7500EF5048 /* CoolNotesAppUITests */,
+				C635524F1D37FE7500EF5048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C635524F1D37FE7500EF5048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C635524E1D37FE7500EF5048 /* CoolNotesApp.app */,
+				C63552621D37FE7500EF5048 /* CoolNotesAppTests.xctest */,
+				C635526D1D37FE7500EF5048 /* CoolNotesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C63552501D37FE7500EF5048 /* CoolNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				C63552911D380C5800EF5048 /* Controllers */,
+				C63552511D37FE7500EF5048 /* AppDelegate.swift */,
+				C63552531D37FE7500EF5048 /* ViewController.swift */,
+				C63552551D37FE7500EF5048 /* Main.storyboard */,
+				C63552581D37FE7500EF5048 /* Assets.xcassets */,
+				C635525A1D37FE7500EF5048 /* LaunchScreen.storyboard */,
+				C635525D1D37FE7500EF5048 /* Info.plist */,
+			);
+			path = CoolNotesApp;
+			sourceTree = "<group>";
+		};
+		C63552651D37FE7500EF5048 /* CoolNotesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C63552661D37FE7500EF5048 /* CoolNotesAppTests.swift */,
+				C63552681D37FE7500EF5048 /* Info.plist */,
+			);
+			path = CoolNotesAppTests;
+			sourceTree = "<group>";
+		};
+		C63552701D37FE7500EF5048 /* CoolNotesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C63552711D37FE7500EF5048 /* CoolNotesAppUITests.swift */,
+				C63552731D37FE7500EF5048 /* Info.plist */,
+			);
+			path = CoolNotesAppUITests;
+			sourceTree = "<group>";
+		};
+		C635528C1D3805E000EF5048 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C63552821D38054300EF5048 /* CoreDataStack.swift */,
+				C63552841D3805CF00EF5048 /* Note+CoreDataProperties.swift */,
+				C63552851D3805CF00EF5048 /* Note.swift */,
+				C63552861D3805CF00EF5048 /* Notebook+CoreDataProperties.swift */,
+				C63552871D3805CF00EF5048 /* Notebook.swift */,
+				C635527F1D37FEA500EF5048 /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C63552911D380C5800EF5048 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C635528F1D380BF600EF5048 /* NotebooksTableViewController.swift */,
+				C635528D1D3808CC00EF5048 /* CoreDataTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C635524D1D37FE7500EF5048 /* CoolNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63552761D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesApp" */;
+			buildPhases = (
+				C635524A1D37FE7500EF5048 /* Sources */,
+				C635524B1D37FE7500EF5048 /* Frameworks */,
+				C635524C1D37FE7500EF5048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolNotesApp;
+			productName = CoolNotesApp;
+			productReference = C635524E1D37FE7500EF5048 /* CoolNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C63552611D37FE7500EF5048 /* CoolNotesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63552791D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesAppTests" */;
+			buildPhases = (
+				C635525E1D37FE7500EF5048 /* Sources */,
+				C635525F1D37FE7500EF5048 /* Frameworks */,
+				C63552601D37FE7500EF5048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63552641D37FE7500EF5048 /* PBXTargetDependency */,
+			);
+			name = CoolNotesAppTests;
+			productName = CoolNotesAppTests;
+			productReference = C63552621D37FE7500EF5048 /* CoolNotesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C635526C1D37FE7500EF5048 /* CoolNotesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C635527C1D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesAppUITests" */;
+			buildPhases = (
+				C63552691D37FE7500EF5048 /* Sources */,
+				C635526A1D37FE7500EF5048 /* Frameworks */,
+				C635526B1D37FE7500EF5048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C635526F1D37FE7500EF5048 /* PBXTargetDependency */,
+			);
+			name = CoolNotesAppUITests;
+			productName = CoolNotesAppUITests;
+			productReference = C635526D1D37FE7500EF5048 /* CoolNotesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63552461D37FE7500EF5048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kevin Casado";
+				TargetAttributes = {
+					C635524D1D37FE7500EF5048 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C63552611D37FE7500EF5048 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C635524D1D37FE7500EF5048;
+					};
+					C635526C1D37FE7500EF5048 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C635524D1D37FE7500EF5048;
+					};
+				};
+			};
+			buildConfigurationList = C63552491D37FE7500EF5048 /* Build configuration list for PBXProject "CoolNotesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C63552451D37FE7500EF5048;
+			productRefGroup = C635524F1D37FE7500EF5048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C635524D1D37FE7500EF5048 /* CoolNotesApp */,
+				C63552611D37FE7500EF5048 /* CoolNotesAppTests */,
+				C635526C1D37FE7500EF5048 /* CoolNotesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C635524C1D37FE7500EF5048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C635525C1D37FE7500EF5048 /* LaunchScreen.storyboard in Resources */,
+				C63552591D37FE7500EF5048 /* Assets.xcassets in Resources */,
+				C63552571D37FE7500EF5048 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63552601D37FE7500EF5048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C635526B1D37FE7500EF5048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C635524A1D37FE7500EF5048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63552541D37FE7500EF5048 /* ViewController.swift in Sources */,
+				C63552521D37FE7500EF5048 /* AppDelegate.swift in Sources */,
+				C635528B1D3805CF00EF5048 /* Notebook.swift in Sources */,
+				C63552811D37FEA500EF5048 /* Model.xcdatamodeld in Sources */,
+				C63552901D380BF600EF5048 /* NotebooksTableViewController.swift in Sources */,
+				C63552831D38054300EF5048 /* CoreDataStack.swift in Sources */,
+				C635528A1D3805CF00EF5048 /* Notebook+CoreDataProperties.swift in Sources */,
+				C63552881D3805CF00EF5048 /* Note+CoreDataProperties.swift in Sources */,
+				C63552891D3805CF00EF5048 /* Note.swift in Sources */,
+				C635528E1D3808CC00EF5048 /* CoreDataTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C635525E1D37FE7500EF5048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63552671D37FE7500EF5048 /* CoolNotesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63552691D37FE7500EF5048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63552721D37FE7500EF5048 /* CoolNotesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C63552641D37FE7500EF5048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C635524D1D37FE7500EF5048 /* CoolNotesApp */;
+			targetProxy = C63552631D37FE7500EF5048 /* PBXContainerItemProxy */;
+		};
+		C635526F1D37FE7500EF5048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C635524D1D37FE7500EF5048 /* CoolNotesApp */;
+			targetProxy = C635526E1D37FE7500EF5048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C63552551D37FE7500EF5048 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63552561D37FE7500EF5048 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C635525A1D37FE7500EF5048 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C635525B1D37FE7500EF5048 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C63552741D37FE7500EF5048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C63552751D37FE7500EF5048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C63552771D37FE7500EF5048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoolNotesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C63552781D37FE7500EF5048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoolNotesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C635527A1D37FE7500EF5048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoolNotesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolNotesApp.app/CoolNotesApp";
+			};
+			name = Debug;
+		};
+		C635527B1D37FE7500EF5048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoolNotesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolNotesApp.app/CoolNotesApp";
+			};
+			name = Release;
+		};
+		C635527D1D37FE7500EF5048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoolNotesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoolNotesApp;
+			};
+			name = Debug;
+		};
+		C635527E1D37FE7500EF5048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoolNotesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevincasado.CoolNotesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoolNotesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C63552491D37FE7500EF5048 /* Build configuration list for PBXProject "CoolNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63552741D37FE7500EF5048 /* Debug */,
+				C63552751D37FE7500EF5048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63552761D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63552771D37FE7500EF5048 /* Debug */,
+				C63552781D37FE7500EF5048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C63552791D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C635527A1D37FE7500EF5048 /* Debug */,
+				C635527B1D37FE7500EF5048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C635527C1D37FE7500EF5048 /* Build configuration list for PBXNativeTarget "CoolNotesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C635527D1D37FE7500EF5048 /* Debug */,
+				C635527E1D37FE7500EF5048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C635527F1D37FEA500EF5048 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C63552801D37FEA500EF5048 /* Model.xcdatamodel */,
+			);
+			currentVersion = C63552801D37FEA500EF5048 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C63552461D37FE7500EF5048 /* Project object */;
+}
